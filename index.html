@@ -15,7 +15,13 @@ http://tutsme-webdesign.info/bootstrap-3-toggable-tabs-and-pills/
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
       <!-- Latest compiled JavaScript -->
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+      
+      <script src="javascripts/box_animation.js"></script>
+      
+<!--       you need this for the tool tip  -->
+      <script type="text/javascript"> 
+        $(function () {$('[data-toggle="tooltip"]').tooltip()})
+      </script>
 <!-- 
 here is linking the neccary scripts
  
@@ -27,11 +33,12 @@ here is linking the neccary scripts
   <body>
   <p>Hopefully this is above the menu <span class="glyphicon glyphicon-leaf"></span></p>
     <div class = "container">
-    <p>this is in the container <span class="glyphicon glyphicon-leaf"></span></p>
+    <p> this is in the<a href="#" data-toggle="tooltip" title="Default tooltip">  container </a> <span class="glyphicon glyphicon-leaf"></span></p>
       <ul class="nav nav-pills nav-stacked col-md-2">
         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
         <li><a data-toggle="tab" href="#pill_1">Menu 1</a></li>
         <li><a data-toggle="tab" href="#pill_2">Menu 2</a></li>
+        <li><a data-toggle="tab" href="#pill_3">Animation</a></li>
       </ul>
 
     <div class="tab-content col-md-10">
@@ -49,6 +56,14 @@ here is linking the neccary scripts
       <div id="pill_2" class="tab-pane fade">
         <h3>Menu 2</h3>
         <p>Some content in menu 2.</p>
+      </div>
+
+       <div id="pill_3" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p><button>Start Animation</button> </p>
+        <p>
+          <div id = "box" style="background:#98bf21;height:100px;width:100px;position:relative;"></div>
+        </p>
       </div>
 
     </div>
