@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ch0m.GitHub.io by ch0m</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script> 
+      function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tabcontent.length; i++) {
+          tablinks[i].classList.remove("active");
+      }
+
+      tablinks[0].classList = "active"
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.classList.add("active");
+      }
+</script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ch0m.GitHub.io</h1>
+        <p></p>
+
+
+       <p class="view"> <a href="https://github.com/ch0m"> View My GitHub Profile</a></p>
+       <p class="view"> <a href="jpn.html"> jpn quiz </a></p>
+       <p class="view"> <a href="ani.html"> animation </a></p>
+        <p> <a href="http://www.rpg-gaming.com/fnv.html?c=17651876cff&r=6c&t=379&l=s377592p01013s317499s3975p0171s3997s3gp0161s3977o9s7b95p0361s7gs719fp01027s0gs94acp0451s1gs1b94a1p0221">new vegas build</a>
+        </p>
+
+        <!-- tabs -->
+      <a href="#" class="tablinks" onclick="openCity(event, 'London')">London</a>
+      <p></p>
+      <a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a>
+      <p></p>
+      <a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a>
+      <p></p>
+
+      </header>
+      <section>
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+
+<!-- <p>heree </p>
+ -->
+<!-- tabs -->
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div> 
+
+<p id="demo"></p>
+
+   <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+      </section>
+
+     
+    
+    <script src="javascripts/scale.fix.js"></script>
+
+
+
+    
+  </body>
+
+    </div>
+</html>
+
+<!-- 
+git add -all
+git commit -m "++++++"
+git push -u origin master
+ -->
