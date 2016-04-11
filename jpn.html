@@ -5,7 +5,7 @@
       <script type="text/javascript">
          $(function(){
         $.get('/read.txt', function(data){
-            var array = data.split(' ');
+            var array = data.split('\n');
             console.log(array);
         });
     });
