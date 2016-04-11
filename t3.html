@@ -1,109 +1,126 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Ch0m.GitHub.io by ch0m</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html manifest="default.manifest">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<head>
+  <title>Dark Crimson Blog - Local Database Demo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+   <meta name="viewport" id="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.6, user-scalable=0">
 
-    <script> 
-      function openCity(evt, cityName) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
+    <link rel="stylesheet" href="db_demo.css" type="text/css">
 
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-      }
+</head>
 
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tabcontent.length; i++) {
-          tablinks[i].classList.remove("active");
-      }
+<body>
+<div id="wrapper">
+<h1>Local Database Demo</h1>
 
-      tablinks[0].classList = "active"
+<h3 id="greeting"></h3>
+    <form>
+      <fieldset>
+      <legend>Customize Your Experience</legend>
+      
+      <table>
+        <tr>
+          <td>
+            <label for="fname">Your Name:</label>
+          </td>
+          <td>  
+            <input type="fname" id="fname" /> 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="bg_color">Background:</label>
+          </td>
+          <td>  
+            <select id="bg_color">
+            
+                <option value="#B3B4EF">Periwinkle</option>
+                <option value="#DFB90D">Gold</option>
+                <option value="#B2BEB5">Ash</option>
+                <option value="#74BF3B">Green Apple</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="font_selection">Favorite Font:</label>
+          </td>
+          <td>  
+            <select id="font_selection">
+              <option value="Helvetica">Helvetica</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Times">Times</option>
+              <option value="Lucida Sans">Lucidia Sans</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fav_car">Favorite Car:</label>
+          </td>
+          <td>  
+            <select id="fav_car">
+                <option value="Porsche 911 Turbo">Porsche 911 GT3</option>
+                <option value="Audi R8 V10">Audi R8 V10</option>
+                <option value="BMW M3 CSL">BMW M3 CSL</option>
+                <option value="Broke-Ass Huffy">Broke-Ass Huffy</option>
+            </select> 
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+            <input type="button" id="update" value="Update Your Preferences" />
+          </td>
+        </tr>
+      </table>
 
-      // Show the current tab, and add an "active" class to the link that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.classList.add("active");
-      }
+  
+
+    <br/>
+
+    
+  <div id="content">
+
+  </div>
+
+    </fieldset>
+    </form>
+    
+    
+    <a href="javascript:void(0)" id="clear">→ Clear Preferences ←</a>
+    
+    <p id="instructions">When your prefereces are updated they are stored in a local database. The data is stored until either use the "clear preferences" or manually remove it and is only accesable within the scope of this page. You can manually view the data / databse by clicking <em>Develop > Show Web Inspector > Databases tab</em>.</p>
+</div>
+
+<div id="footer">
+  <div>
+    <p>
+    Written by: <a href="http://darkcrimson.com" target="_blank">Ben Lister</a> for tutorial: <a href="http://blog.darkcrimson.com/2010/05/local-databases/" target="_blank">&#147;Getting Started with HTML5 Local Databases&#148;</a>. Last revised: 2010 May 12
+    </p>
+  <br />
+<p>This page and its related files are <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">Licensed under the MIT License</a></p>  
+
+  <p><a href="http://twitter.com/benclister" target="_blank">Follow me on Twitter</a> | <a href="http://blog.darkcrimson.com/samples/localdb/darkcrimson_localdb_demo.zip">Download Source</a>
+    </p>  
+  </div>
+</div>
+
+<!-- <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-818084-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+-->
 
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Ch0m.GitHub.io</h1>
-        <p></p>
-
-
-       <p class="view"> <a href="https://github.com/ch0m"> View My GitHub Profile</a></p>
-       <p class="view"> <a href="jpn.html"> jpn quiz </a></p>
-       <p class="view"> <a href="ani.html"> animation </a></p>
-        <p> <a href="http://www.rpg-gaming.com/fnv.html?c=17651876cff&r=6c&t=379&l=s377592p01013s317499s3975p0171s3997s3gp0161s3977o9s7b95p0361s7gs719fp01027s0gs94acp0451s1gs1b94a1p0221">new vegas build</a>
-        </p>
-
-        <!-- tabs -->
-      <a href="#" class="tablinks" onclick="openCity(event, 'London')">London</a>
-      <p></p>
-      <a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a>
-      <p></p>
-      <a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a>
-      <p></p>
-
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-
-<!-- <p>heree </p>
- -->
-<!-- tabs -->
-    <div id="London" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
-    </div>
-
-    <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p> 
-    </div>
-
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div> 
-
-<p id="demo"></p>
-
-   <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-      </section>
-
-     
-    
-    <script src="javascripts/scale.fix.js"></script>
-
-
-
-    
-  </body>
-
-    </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="javascripts/db2.js" type="text/javascript" charset="utf-8"></script>
+</body>
 </html>
-
-<!-- 
-git add -all
-git commit -m "++++++"
-git push -u origin master
- -->
