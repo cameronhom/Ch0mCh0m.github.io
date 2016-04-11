@@ -12,7 +12,11 @@
          $(function(){
         $.get('/read.txt', function(data){
             var array = data.split('\n');
-            document.write(array , "<br>", 'wii');
+            for (var i = 0; i < array.length; i++) 
+            {
+              document.write(array[i] , "<br>");
+            }
+            
         });
     });
       </script>
