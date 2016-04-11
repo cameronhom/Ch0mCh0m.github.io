@@ -7,7 +7,7 @@
          $(function(){
         $.get('/read.txt', function(data){
             var array = data.split('\n');
-            document.write(array[0]);
+            document.write(array + '\n');
         });
     });
       </script>
